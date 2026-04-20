@@ -2,10 +2,10 @@ import React from "react";
 
 export default function WhoItsFor() {
   const rows = [
-    { you: "You're a Head of Sales / RevOps / Founder selling to Indian mid-market buyers.", not: "You run a 300-person US enterprise sales org." },
-    { you: "Your team does demos in Hinglish, Tanglish, or code-switches mid-call.", not: "Every call is a clean English demo." },
-    { you: "Procurement takes 6–14 weeks and you want to see it coming.", not: "You auto-close on credit card." },
-    { you: "You think 'AI-first revenue platform' is a meaningless phrase.", not: "You loved that phrase." },
+    { you: "You're a VP Sales / RevOps / Founder running a B2B sales team in India.", not: "You run a 300-person US enterprise sales org looking for Gong." },
+    { you: "Your team runs 20–100+ calls a week and most generate zero coaching feedback.", not: "You already have a mature call review process that works." },
+    { you: "Procurement takes 6–14 weeks and you want to see deal risk before it's too late.", not: "You auto-close on credit card with no real sales motion." },
+    { you: "Your CRM data is incomplete because reps don't update it after calls.", not: "Your reps love post-call admin and always update the CRM." },
   ];
   return (
     <section id="who" style={{ padding: "100px 0", background: "var(--ink)", color: "var(--paper)" }}>
@@ -22,7 +22,7 @@ export default function WhoItsFor() {
           <div style={{ padding: 20, background: "var(--chart)", color: "var(--ink)", borderRight: "4px solid var(--paper)", borderBottom: "4px solid var(--paper)" }}>
             <div style={{ fontFamily: "var(--font-display)", fontSize: 28, textTransform: "uppercase" }}>✓ YOU</div>
           </div>
-          <div style={{ padding: 20, background: "var(--pink)", color: "var(--ink)", borderBottom: "4px solid var(--paper)" }}>
+          <div style={{ padding: 20, background: "var(--pink)", color: "var(--paper)", borderBottom: "4px solid var(--paper)" }}>
             <div style={{ fontFamily: "var(--font-display)", fontSize: 28, textTransform: "uppercase" }}>✗ NOT YOU</div>
           </div>
           {rows.map((r, i) => (

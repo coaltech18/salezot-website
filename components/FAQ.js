@@ -3,12 +3,12 @@ import { useState } from "react";
 export default function FAQ() {
   const [open, setOpen] = useState(0);
   const items = [
-    { q: "Why only 12 design partners?", a: "Because 13 would be too many for us to actually talk to every week. We'd rather go deep with a dozen teams than run a waitlist theater." },
-    { q: "Is this free during the partnership?", a: "Yes. For all 12 weeks. After that, founding pricing locks in — which is roughly 40% of our GA pricing, forever." },
-    { q: "Do you support Salesforce / HubSpot / Zoho?", a: "Zoho shipped last week. HubSpot is live. Salesforce is in beta with 3 partners — if you're on SF Enterprise with complex OWD rules, we'd love to include you." },
-    { q: "Where's the data hosted?", a: "Mumbai (AWS ap-south-1). Your transcripts never leave India. We're SOC-2 Type I in progress, Type II targeted for Q3." },
-    { q: "Can I apply if I'm not a founder?", a: "Yes — if you can get weekly calls on the calendar and push feedback through your team, we don't care about your title." },
-    { q: "What if you pivot or shut down?", a: "Fair question. We have 22 months of runway as of April. If we shut down, you get 90 days of exports and a refund of anything paid. In writing." },
+    { q: "Which call platforms do you support?", a: "Zoom and Google Meet via AI bot in Phase 1. Microsoft Teams and manual audio/video upload (MP4, MP3, WAV) are next. Phone/VOIP is Phase 2." },
+    { q: "Is this free during the partnership?", a: "Yes — fully free for the 12-week partnership period. After that, founding partner pricing locks in at roughly 40% of our GA price, permanently." },
+    { q: "Which CRMs do you integrate with?", a: "HubSpot is live. Zoho shipped last week. Salesforce is in beta with 3 partners. LeadSquared is on the Phase 1 roadmap." },
+    { q: "Where is our data hosted?", a: "Mumbai (AWS ap-south-1). Your call recordings and transcripts never leave India. DPDPA-compliant from Day 1, SOC 2 Type II targeted by Month 9." },
+    { q: "What languages do you transcribe?", a: "English with Indian-accented speech optimisation right now. Hindi, Kannada, and Tamil — plus full Hinglish code-switching — are in Phase 3." },
+    { q: "Can I apply if I'm not the founder?", a: "Yes — if you can get weekly calls on the calendar and push real feedback through your team, we don't care about your title." },
   ];
   return (
     <section id="faq" style={{ padding: "100px 0" }}>

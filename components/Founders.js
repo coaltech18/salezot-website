@@ -31,8 +31,7 @@ export default function Founders() {
             <div className="founder-photo" style={{ flexShrink: 0 }} />
             <div>
               <div style={{ fontFamily: "var(--font-display)", fontSize: 26, textTransform: "uppercase", marginBottom: 4 }}>
-                {/* TODO: replace [Founder Name] */}
-                [Founder Name]
+                Adithya S Reddy
               </div>
               <div
                 style={{
@@ -41,14 +40,13 @@ export default function Founders() {
                   fontWeight: 700,
                   textTransform: "uppercase",
                   marginBottom: 10,
-                  color: "var(--blue)",
+                  color: "var(--red)",
                 }}
               >
                 Co-founder &amp; CEO
               </div>
               <div style={{ fontSize: 15, lineHeight: 1.5 }}>
-                {/* TODO: replace [2-line bio placeholder] */}
-                [2-line bio placeholder]
+                Previously built and scaled B2B sales teams across multiple growth stages. Watched brilliant teams lose deals not from lack of effort, but from lack of a system. Leading product vision, GTM, and every enterprise customer conversation at Salezot.
               </div>
             </div>
           </div>
@@ -59,8 +57,7 @@ export default function Founders() {
             <div className="founder-photo" style={{ flexShrink: 0 }} />
             <div>
               <div style={{ fontFamily: "var(--font-display)", fontSize: 26, textTransform: "uppercase", marginBottom: 4 }}>
-                {/* TODO: replace [CTO Name] */}
-                [CTO Name]
+                Hemanth Mahesh
               </div>
               <div
                 style={{
@@ -69,14 +66,13 @@ export default function Founders() {
                   fontWeight: 700,
                   textTransform: "uppercase",
                   marginBottom: 10,
-                  color: "var(--blue)",
+                  color: "var(--red)",
                 }}
               >
                 Co-founder &amp; CTO
               </div>
               <div style={{ fontSize: 15, lineHeight: 1.5 }}>
-                {/* TODO: replace [2-line bio placeholder] */}
-                [2-line bio placeholder]
+                Technical architect of everything Salezot does under the hood. Background in ML systems, applied AI, and product engineering — with a specific obsession: making AI insights surface fast enough to be useful during a live call, not three seconds after the moment has passed.
               </div>
             </div>
           </div>
@@ -92,20 +88,16 @@ export default function Founders() {
             lineHeight: 1.55,
           }}
         >
-          We&apos;re building Salezot because we&apos;ve watched too many great sales
-          teams lose deals they should have won — not from lack of effort, but
-          from lack of a system. If that&apos;s a problem you live with, we&apos;d like
-          to hear from you. Email me directly:{" "}
+          We&apos;re building Salezot because we&apos;ve sat inside this problem with too many great sales teams. If you&apos;re a revenue leader who&apos;s tired of flying blind on your pipeline, we&apos;d like to hear from you directly.{" "}
           <a
-            href="mailto:founder@salezot.com"
+            href="mailto:hello@salezot.com"
             style={{
               fontFamily: "var(--font-mono)",
               fontWeight: 700,
               borderBottom: "3px solid var(--chart)",
             }}
           >
-            {/* TODO: replace with real email */}
-            founder@salezot.com
+            hello@salezot.com
           </a>
         </p>
       </div>

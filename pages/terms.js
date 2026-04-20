@@ -1,10 +1,8 @@
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
+import Layout from "@/components/Layout";
 
 export default function Terms() {
   return (
-    <div data-screen-label="Terms">
-      <Nav />
+    <Layout screenLabel="Terms">
       <section style={{ padding: "120px 0", minHeight: "60vh" }}>
         <div className="container" style={{ maxWidth: 720 }}>
           <span className="section-label" style={{ marginBottom: 20, display: "inline-block" }}>/ legal</span>
@@ -23,7 +21,6 @@ export default function Terms() {
           </div>
         </div>
       </section>
-      <Footer />
-    </div>
+    </Layout>
   );
 }

@@ -2,14 +2,14 @@ import Link from "next/link";
 
 export default function Partners() {
   const items = [
-    { n: "01", t: "Shape the product", d: "Weekly 45-min calls. Your pain → our roadmap. We ship what you're actually blocked on." },
-    { n: "02", t: "Founding pricing, forever", d: "Locked-in rate when we go GA. No 'enterprise tier' surprise pricing later." },
-    { n: "03", t: "Your logo on the wall", d: "Cohort 01 credit on the site, case study, and co-authored launch post." },
-    { n: "04", t: "Direct founder line", d: "Slack Connect with the 2 founders. Not a CSM. Not a ticket queue." },
+    { n: "01", t: "Shape the product", d: "Weekly calls with the founders. Your exact pain → our next sprint. We ship what's actually blocking your team." },
+    { n: "02", t: "Founding pricing, locked", d: "Your rate locks in permanently when we go GA. No enterprise tier surprise pricing later." },
+    { n: "03", t: "Your logo on the wall", d: "Cohort 01 credit on the site, a case study, and a co-authored launch post." },
+    { n: "04", t: "Direct founder line", d: "Slack Connect with Adithya and Hemanth. Not a CSM. Not a ticket queue." },
   ];
   const asks = [
     "45 min / week for 12 weeks",
-    "Share 3 real sales calls / week",
+    "Share real sales calls with us weekly",
     "Brutal feedback in Slack",
     "Be a reference for cohort 02",
   ];
@@ -17,15 +17,15 @@ export default function Partners() {
     <section id="partners" style={{ padding: "100px 0", position: "relative" }}>
       <div className="container">
         <div className="reveal" style={{ marginBottom: 20, display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
-          <span className="section-label">/03 · design partner program</span>
-          <span className="chip chart">COHORT 01 · 7 SEATS LEFT</span>
+          <span className="section-label">/03 · enterprise design partner program</span>
+          <span className="chip chart">COHORT 01 · FOUNDING TEAMS</span>
         </div>
         <h2 className="reveal" style={{ maxWidth: "16ch", marginBottom: 48 }}>
-          We ship <span className="highlight-block">what you want.</span>
+          We ship <span className="highlight-block">what you need.</span>
           <br />
           You help us{" "}
           <span className="highlight-block highlight-chart" style={{ transform: "rotate(1deg)" }}>
-            not suck.
+            build it right.
           </span>
         </h2>
 
@@ -49,7 +49,7 @@ export default function Partners() {
           </div>
 
           <div className="reveal card dark" style={{ alignSelf: "start", transform: "rotate(1deg)" }}>
-            <div className="section-label" style={{ background: "var(--pink)", color: "var(--ink)", marginBottom: 18 }}>/ the ask</div>
+            <div className="section-label" style={{ background: "var(--pink)", color: "var(--paper)", marginBottom: 18 }}>/ the ask</div>
             <div style={{ fontFamily: "var(--font-display)", fontSize: 26, textTransform: "uppercase", marginBottom: 18, color: "var(--chart)" }}>
               What we need from you
             </div>
@@ -72,7 +72,7 @@ export default function Partners() {
               ))}
             </ul>
             <Link href="/apply" className="btn primary" style={{ marginTop: 22, width: "100%", justifyContent: "center" }}>
-              I&apos;m in. Let&apos;s talk →
+              I&apos;m in. Request a demo →
             </Link>
           </div>
         </div>

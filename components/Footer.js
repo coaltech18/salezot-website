@@ -7,7 +7,7 @@ export default function Footer() {
         background: "var(--ink)",
         color: "var(--paper)",
         padding: "60px 0 28px",
-        borderTop: "6px solid var(--chart)",
+        borderTop: "6px solid var(--red)",
       }}
     >
       <div className="container">
@@ -18,9 +18,7 @@ export default function Footer() {
               <span>Salezot</span>
             </div>
             <p style={{ fontSize: 15, opacity: 0.7, maxWidth: 320 }}>
-              Conversation intelligence for Indian B2B SaaS.
-              <br />
-              Pre-beta. Building in public. One cohort at a time.
+              AI-powered revenue intelligence for Indian B2B sales teams. Call recording, real-time AI coaching, and CRM auto-sync — built for India.
             </p>
           </div>
           <div>
@@ -37,7 +35,7 @@ export default function Footer() {
             <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, textTransform: "uppercase", marginBottom: 12, opacity: 0.5 }}>
               Company
             </div>
-            {["About", "Build log", "Careers (0)", "Contact"].map((l) => (
+            {["About", "Careers (0)", "Contact"].map((l) => (
               <div key={l} style={{ marginBottom: 8, fontSize: 15 }}>
                 {l}
               </div>
@@ -73,7 +71,7 @@ export default function Footer() {
           }}
         >
           <div>© 2026 Salezot Labs Pvt Ltd · Bengaluru</div>
-          <div>v0.3 · built by 2 humans, 1 dog</div>
+          <div>v0.3 · Adithya S Reddy &amp; Hemanth Mahesh</div>
         </div>
       </div>
     </footer>

@@ -61,7 +61,7 @@ export default function Hero() {
         </div>
 
         <div className="reveal" style={{ marginBottom: 20 }}>
-          <span className="chip blue">⬤ Pre-beta · v0.3</span>
+          <span className="chip red">⬤ Pre-beta · v0.3</span>
           <span className="chip" style={{ marginLeft: 8, background: "var(--paper)" }}>
             India-first · B2B SaaS
           </span>
@@ -69,16 +69,12 @@ export default function Hero() {
 
         {/* CHANGE 1 — hero headline */}
         <h1 className="reveal" style={{ maxWidth: "16ch", marginBottom: 28 }}>
-          Conversation
+          Your entire revenue
           <br />
-          intelligence,
+          organisation,
+          <span className="highlight-block">{" coached"}</span>
           <br />
-          built for how{" "}
-          <span className="highlight-block" style={{ color: "var(--ink)" }}>
-            Indian SaaS teams
-          </span>
-          <br />
-          actually sell.
+          by AI.
         </h1>
 
         {/* CHANGE 1 — subhead */}
@@ -86,9 +82,9 @@ export default function Hero() {
           className="reveal"
           style={{ maxWidth: 620, fontSize: 20, lineHeight: 1.45, marginBottom: 32 }}
         >
-          We&apos;re building Salezot with a small group of founding{" "}
-          <b>design partners</b> — Series A–C B2B SaaS sales leaders who want to
-          shape the product. If that&apos;s you, we&apos;d like to talk.
+          Salezot captures every sales conversation your team has, surfaces what&apos;s
+          actually happening in your pipeline, and gives every rep and manager the
+          intelligence to perform like your best.
         </p>
 
         <div
@@ -98,17 +94,17 @@ export default function Hero() {
           {/* CHANGE 1 — primary CTA */}
           <Link
             href="/apply"
-            className="btn primary"
+            className="btn red"
             style={{ fontSize: 18, padding: "18px 26px" }}
           >
-            Apply to be a Design Partner →
+            Request Enterprise Demo →
           </Link>
           {/* Secondary kept */}
-          <Link href="#product" className="btn ghost">
+          <Link href="/product" className="btn ghost">
             Explore the Platform
           </Link>
           <span style={{ fontFamily: "var(--font-mono)", fontSize: 12, marginLeft: 6 }}>
-            &lt;— 7 of 12 seats left · cohort closes May 15
+            &lt;— Free for founding enterprise teams · cohort closes May 15
           </span>
         </div>
       </div>

@@ -4,15 +4,12 @@
  */
 import { useState } from "react";
 import Link from "next/link";
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
-import useReveal from "@/hooks/useReveal";
+import Layout from "@/components/Layout";
 import { Star } from "@/components/Stickers";
 
 const FREE_EMAIL_DOMAINS = ["gmail.com", "yahoo.com", "yahoo.co.in", "outlook.com", "hotmail.com", "live.com", "icloud.com", "proton.me", "protonmail.com"];
 
 export default function Apply() {
-  useReveal();
   const [data, setData] = useState({
     fullName: "",
     workEmail: "",
@@ -63,9 +60,7 @@ export default function Apply() {
   const crmOptions = ["HubSpot", "Salesforce", "Zoho", "LeadSquared", "Other", "None"];
 
   return (
-    <div data-screen-label="02 Apply">
-      <Nav />
-
+    <Layout screenLabel="05 Apply">
       <section style={{ padding: "80px 0 60px", position: "relative" }}>
         <div className="container" style={{ maxWidth: 880 }}>
           <div className="reveal" style={{ marginBottom: 20, display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
@@ -88,7 +83,7 @@ export default function Apply() {
               {/* 1. Full name */}
               <div style={{ marginBottom: 20 }}>
                 <label className="form-label">
-                  Full name {errors.fullName && <span style={{ color: "var(--pink)" }}>· {errors.fullName}</span>}
+                  Full name {errors.fullName && <span style={{ color: "var(--red)" }}>· {errors.fullName}</span>}
                 </label>
                 <input
                   type="text"
@@ -103,7 +98,7 @@ export default function Apply() {
               {/* 2. Work email + free-email soft warning */}
               <div style={{ marginBottom: 20 }}>
                 <label className="form-label">
-                  Work email {errors.workEmail && <span style={{ color: "var(--pink)" }}>· {errors.workEmail}</span>}
+                  Work email {errors.workEmail && <span style={{ color: "var(--red)" }}>· {errors.workEmail}</span>}
                 </label>
                 <input
                   type="email"
@@ -119,6 +114,7 @@ export default function Apply() {
                       marginTop: 10,
                       padding: "10px 14px",
                       background: "var(--pink)",
+                      color: "var(--paper)",
                       border: "3px solid var(--ink)",
                       fontFamily: "var(--font-mono)",
                       fontSize: 13,
@@ -133,7 +129,7 @@ export default function Apply() {
               {/* 3. Company */}
               <div style={{ marginBottom: 20 }}>
                 <label className="form-label">
-                  Company name {errors.company && <span style={{ color: "var(--pink)" }}>· {errors.company}</span>}
+                  Company name {errors.company && <span style={{ color: "var(--red)" }}>· {errors.company}</span>}
                 </label>
                 <input
                   type="text"
@@ -148,7 +144,7 @@ export default function Apply() {
               {/* 4. Role */}
               <div style={{ marginBottom: 20 }}>
                 <label className="form-label">
-                  Your role {errors.role && <span style={{ color: "var(--pink)" }}>· {errors.role}</span>}
+                  Your role {errors.role && <span style={{ color: "var(--red)" }}>· {errors.role}</span>}
                 </label>
                 <input
                   type="text"
@@ -163,7 +159,7 @@ export default function Apply() {
               {/* 5. Call volume */}
               <div style={{ marginBottom: 20 }}>
                 <label className="form-label">
-                  Sales calls per week {errors.callVolume && <span style={{ color: "var(--pink)" }}>· {errors.callVolume}</span>}
+                  Sales calls per week {errors.callVolume && <span style={{ color: "var(--red)" }}>· {errors.callVolume}</span>}
                 </label>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
                   {callVolumeOptions.map((o) => (
@@ -193,7 +189,7 @@ export default function Apply() {
               {/* 6. CRM */}
               <div style={{ marginBottom: 20 }}>
                 <label className="form-label">
-                  What CRM do you currently use? {errors.crm && <span style={{ color: "var(--pink)" }}>· {errors.crm}</span>}
+                  What CRM do you currently use? {errors.crm && <span style={{ color: "var(--red)" }}>· {errors.crm}</span>}
                 </label>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
                   {crmOptions.map((o) => (
@@ -236,7 +232,7 @@ export default function Apply() {
               {/* 8. Why */}
               <div style={{ marginBottom: 28 }}>
                 <label className="form-label">
-                  Why do you want to be a design partner? {errors.why && <span style={{ color: "var(--pink)" }}>· {errors.why}</span>}
+                  Why do you want to be a design partner? {errors.why && <span style={{ color: "var(--red)" }}>· {errors.why}</span>}
                 </label>
                 <textarea
                   className={`form-input ${errors.why ? "error" : ""}`}
@@ -297,8 +293,6 @@ export default function Apply() {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </Layout>
   );
 }

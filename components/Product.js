@@ -41,13 +41,13 @@ export default function Product() {
                 </div>
                 <div style={{ fontSize: 14, lineHeight: 1.5 }}>
                   <p style={{ marginBottom: 10 }}>
-                    <b style={{ color: "var(--chart)" }}>[Aarav / Founder]</b> &quot;Look, we&apos;ve piloted Gong before, but honestly the team stopped opening it after week 3...&quot;
+                    <b style={{ color: "var(--chart)" }}>[Adithya / Founder]</b> &quot;Look, we&apos;ve piloted Gong before, but honestly the team stopped opening it after week 3...&quot;
                   </p>
                   <p style={{ marginBottom: 10, opacity: 0.7 }}>
                     <b>[Customer]</b> &quot;Same. We tried Chorus. Felt like it was built for a 200-person US sales org.&quot;
                   </p>
                   <p>
-                    <b style={{ color: "var(--chart)" }}>[Aarav]</b> &quot;Right. So we&apos;re fixing exactly that.&quot;
+                    <b style={{ color: "var(--chart)" }}>[Adithya / Founder]</b> &quot;Right. So we&apos;re fixing exactly that.&quot;
                   </p>
                 </div>
               </div>
@@ -57,7 +57,7 @@ export default function Product() {
                   <div style={{ fontFamily: "var(--font-display)", fontSize: 13, textTransform: "uppercase" }}>Competitor objection</div>
                   <div style={{ fontSize: 13, marginTop: 4 }}>Gong, Chorus mentioned · &quot;stopped using&quot;</div>
                 </div>
-                <div style={{ background: "var(--pink)", color: "var(--ink)", padding: 14, border: "3px solid var(--paper)", marginBottom: 10 }}>
+                <div style={{ background: "var(--pink)", color: "var(--paper)", padding: 14, border: "3px solid var(--paper)", marginBottom: 10 }}>
                   <div style={{ fontFamily: "var(--font-display)", fontSize: 13, textTransform: "uppercase" }}>Playbook trigger</div>
                   <div style={{ fontSize: 13, marginTop: 4 }}>→ Share &quot;Why we&apos;re different for India&quot; deck</div>
                 </div>
@@ -73,10 +73,10 @@ export default function Product() {
             <div className="section-label" style={{ marginBottom: 16 }}>/ shipping this month</div>
             <ul style={{ listStyle: "none", display: "grid", gap: 14 }}>
               {[
-                ["Hinglish transcripts", "code-switch aware, not a lazy translate layer", "chart"],
-                ["Procurement radar", "flags InfoSec, legal, SOC-2 requests in real time", "blue"],
-                ["Playbook triggers", "your SDR's playbook, surfaced mid-call", "pink"],
-                ["CRM write-back", "HubSpot, Zoho, Salesforce · 1-click", "ink"],
+                ["AI Call Summary", "auto-generated 3–5 point summary with next steps, decisions, and action items", "chart"],
+                ["Talk Ratio & Sentiment", "rep vs prospect talk time · flags over-talking in real time", "blue"],
+                ["CRM Write-back", "HubSpot, Salesforce, Zoho · auto-populated fields post-call", "pink"],
+                ["Follow-up Email Draft", "AI writes a personalised follow-up within 2 mins of call ending", "ink"],
               ].map(([t, s, c], i) => (
                 <li key={i} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
                   <div
@@ -112,9 +112,9 @@ export default function Product() {
           </div>
           <div className="reveal card dark" style={{ gridColumn: "span 4" }}>
             <div style={{ fontFamily: "var(--font-display)", fontSize: 48, lineHeight: 0.9, color: "var(--chart)" }}>12</div>
-            <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, marginTop: 8, opacity: 0.7 }}>design partners in cohort 01</div>
+            <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, marginTop: 8, opacity: 0.7 }}>enterprise teams in cohort 01</div>
           </div>
-          <div className="reveal card" style={{ gridColumn: "span 4", background: "var(--pink)" }}>
+          <div className="reveal card" style={{ gridColumn: "span 4", background: "var(--pink)", color: "var(--paper)" }}>
             <div style={{ fontFamily: "var(--font-display)", fontSize: 48, lineHeight: 0.9 }}>0</div>
             <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, marginTop: 8 }}>
               enterprise sales reps on payroll*
