@@ -37,7 +37,7 @@ export default function Home() {
         variant="blue"
         items={[
           "REQUEST ENTERPRISE DEMO",
-          "HELLO@SALEZOT.COM",
+          "INFO@SALEZOT.COM",
           "BENGALURU · BUILDING FOR THE WORLD",
           "TURNING CONVERSATIONS INTO REVENUE",
         ]}

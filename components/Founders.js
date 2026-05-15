@@ -90,14 +90,14 @@ export default function Founders() {
         >
           We&apos;re building Salezot because we&apos;ve sat inside this problem with too many great sales teams. If you&apos;re a revenue leader who&apos;s tired of flying blind on your pipeline, we&apos;d like to hear from you directly.{" "}
           <a
-            href="mailto:hello@salezot.com"
+            href="mailto:info@salezot.com"
             style={{
               fontFamily: "var(--font-mono)",
               fontWeight: 700,
               borderBottom: "3px solid var(--chart)",
             }}
           >
-            hello@salezot.com
+            info@salezot.com
           </a>
         </p>
       </div>
