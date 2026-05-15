@@ -27,7 +27,7 @@ export default function FAQ() {
             return (
               <div
                 key={i}
-                className="reveal"
+                className="reveal faq-item"
                 style={{
                   border: "var(--border-thick)",
                   background: isOpen ? "var(--chart)" : "var(--paper)",
@@ -36,6 +36,7 @@ export default function FAQ() {
                 }}
               >
                 <button
+                  className="faq-q"
                   onClick={() => setOpen(isOpen ? -1 : i)}
                   style={{
                     all: "unset",
@@ -67,7 +68,7 @@ export default function FAQ() {
                     {isOpen ? "–" : "+"}
                   </div>
                 </button>
-                {isOpen && <div style={{ padding: "0 24px 24px 24px", fontSize: 17, lineHeight: 1.5, maxWidth: 720 }}>{it.a}</div>}
+                {isOpen && <div className="faq-a" style={{ padding: "0 24px 24px 24px", fontSize: 17, lineHeight: 1.5, maxWidth: 720 }}>{it.a}</div>}
               </div>
             );
           })}

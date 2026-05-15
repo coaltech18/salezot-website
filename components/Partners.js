@@ -29,8 +29,8 @@ export default function Partners() {
           </span>
         </h2>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1.3fr 1fr", gap: 28 }}>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 18 }}>
+        <div className="partners-grid" style={{ display: "grid", gridTemplateColumns: "1.3fr 1fr", gap: 28 }}>
+          <div className="partners-items" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 18 }}>
             {items.map((it, i) => (
               <div
                 key={i}

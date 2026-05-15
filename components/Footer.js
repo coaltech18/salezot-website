@@ -11,7 +11,7 @@ export default function Footer() {
       }}
     >
       <div className="container">
-        <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: 40, marginBottom: 40 }}>
+        <div className="footer-grid" style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: 40, marginBottom: 40 }}>
           <div>
             <div className="logo" style={{ color: "var(--paper)", marginBottom: 14 }}>
               <div className="logo-mark">S</div>

@@ -14,9 +14,9 @@ export default function Product() {
           <span className="highlight-block highlight-chart">not a &quot;revenue OS&quot;.</span>
         </h2>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(12,1fr)", gap: 20 }}>
+        <div className="product-grid" style={{ display: "grid", gridTemplateColumns: "repeat(12,1fr)", gap: 20 }}>
           <div
-            className="reveal card"
+            className="reveal card product-cell-7"
             style={{ gridColumn: "span 7", background: "var(--ink)", color: "var(--paper)", padding: 0, overflow: "hidden" }}
           >
             <div
@@ -34,7 +34,7 @@ export default function Product() {
               <span style={{ width: 12, height: 12, background: "var(--blue)", borderRadius: "50%" }}></span>
               <span style={{ marginLeft: 12, opacity: 0.6 }}>salezot.app/calls/0142</span>
             </div>
-            <div style={{ padding: 32, display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
+            <div className="product-transcript" style={{ padding: 32, display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
               <div>
                 <div style={{ fontFamily: "var(--font-mono)", fontSize: 11, opacity: 0.5, marginBottom: 6 }}>
                   TRANSCRIPT — 00:14:32
@@ -69,7 +69,7 @@ export default function Product() {
             </div>
           </div>
 
-          <div className="reveal card" style={{ gridColumn: "span 5", transform: "rotate(1deg)" }}>
+          <div className="reveal card product-cell-5" style={{ gridColumn: "span 5", transform: "rotate(1deg)" }}>
             <div className="section-label" style={{ marginBottom: 16 }}>/ shipping this month</div>
             <ul style={{ listStyle: "none", display: "grid", gap: 14 }}>
               {[
@@ -104,17 +104,17 @@ export default function Product() {
           </div>
 
           <div
-            className="reveal card"
+            className="reveal card product-cell-4"
             style={{ gridColumn: "span 4", background: "var(--chart)", transform: "rotate(-1.5deg)" }}
           >
             <div style={{ fontFamily: "var(--font-display)", fontSize: 64, lineHeight: 0.9 }}>v0.3</div>
             <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, marginTop: 8 }}>current build · updated 4 days ago</div>
           </div>
-          <div className="reveal card dark" style={{ gridColumn: "span 4" }}>
+          <div className="reveal card dark product-cell-4" style={{ gridColumn: "span 4" }}>
             <div style={{ fontFamily: "var(--font-display)", fontSize: 48, lineHeight: 0.9, color: "var(--chart)" }}>12</div>
             <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, marginTop: 8, opacity: 0.7 }}>enterprise teams in cohort 01</div>
           </div>
-          <div className="reveal card" style={{ gridColumn: "span 4", background: "var(--pink)", color: "var(--paper)" }}>
+          <div className="reveal card product-cell-4" style={{ gridColumn: "span 4", background: "var(--pink)", color: "var(--paper)" }}>
             <div style={{ fontFamily: "var(--font-display)", fontSize: 48, lineHeight: 0.9 }}>0</div>
             <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, marginTop: 8 }}>
               enterprise sales reps on payroll*

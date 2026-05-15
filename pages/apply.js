@@ -61,7 +61,7 @@ export default function Apply() {
 
   return (
     <Layout screenLabel="05 Apply">
-      <section style={{ padding: "80px 0 60px", position: "relative" }}>
+      <section className="sz-section" style={{ padding: "80px 0 60px", position: "relative" }}>
         <div className="container" style={{ maxWidth: 880 }}>
           <div className="reveal" style={{ marginBottom: 20, display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
             <span className="section-label" style={{ background: "var(--blue)", color: "#fff" }}>/ design partner application</span>
@@ -69,7 +69,7 @@ export default function Apply() {
           </div>
 
           {/* CHANGE 2 — heading + subcopy */}
-          <h1 className="reveal" style={{ fontSize: "clamp(44px,6vw,84px)", marginBottom: 16 }}>
+          <h1 className="reveal" style={{ fontSize: "clamp(32px,7vw,84px)", marginBottom: 16 }}>
             Apply to be a
             <br />
             <span className="highlight-block highlight-chart">founding design partner.</span>
@@ -79,7 +79,7 @@ export default function Apply() {
           </p>
 
           {!submitted && (
-            <form onSubmit={handleSubmit} className="reveal card" style={{ padding: 40 }}>
+            <form onSubmit={handleSubmit} className="reveal card apply-form" style={{ padding: 40 }}>
               {/* 1. Full name */}
               <div style={{ marginBottom: 20 }}>
                 <label className="form-label">
@@ -259,7 +259,7 @@ export default function Apply() {
           )}
 
           {submitted && (
-            <div className="reveal card" style={{ padding: 60, textAlign: "center" }}>
+            <div className="reveal card apply-form" style={{ padding: 60, textAlign: "center" }}>
               <div style={{ fontSize: 80, marginBottom: 10, lineHeight: 1 }}>✓</div>
               <div style={{ fontFamily: "var(--font-display)", fontSize: 42, textTransform: "uppercase", marginBottom: 14, lineHeight: 1 }}>
                 You&apos;re in the pile.

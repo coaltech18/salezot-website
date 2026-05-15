@@ -18,7 +18,7 @@ export default function BuildLog() {
           {entries.map((e, i) => (
             <div
               key={i}
-              className="reveal card"
+              className="reveal card buildlog-row"
               style={{
                 display: "grid",
                 gridTemplateColumns: "120px 90px 1fr",

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function FinalCtaSection() {
   return (
-    <section style={{ padding: "100px 0", background: "var(--ink)", color: "var(--paper)", textAlign: "center" }}>
+    <section className="sz-section" style={{ padding: "100px 0", background: "var(--ink)", color: "var(--paper)", textAlign: "center" }}>
       <div className="container" style={{ maxWidth: 820 }}>
         <h2 className="reveal" style={{ marginBottom: 24 }}>
           Ready to see what&apos;s actually

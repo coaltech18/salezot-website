@@ -95,3 +95,116 @@ p{font-size:17px;line-height:1.5;}
 .form-input.error{box-shadow:4px 4px 0 0 var(--pink);}
 .form-input:focus{box-shadow:6px 6px 0 0 var(--chart);transform:translate(-1px,-1px);}
 .form-label{font-family:var(--font-mono);font-size:12px;font-weight:700;text-transform:uppercase;margin-bottom:6px;display:block;}
+
+/* ============================================================
+   RESPONSIVE LAYER
+   Components with inline grid/padding need !important to override.
+   Breakpoints: 1024 / 900 (nav) / 768 / 600 / 480 / 360
+   ============================================================ */
+
+.nav-toggle{display:none;}
+.nav-mobile{display:none;}
+
+@media (max-width: 1024px){
+  .container{padding:0 22px;}
+  .status-pill{display:none;}
+  .partners-grid{grid-template-columns:1fr !important;}
+  .product-cell-7{grid-column:span 12 !important;}
+  .product-cell-5{grid-column:span 12 !important;}
+}
+
+@media (max-width: 900px){
+  .nav-links{display:none;}
+  .nav-toggle{
+    display:flex;flex-direction:column;justify-content:center;gap:5px;
+    width:44px;height:44px;padding:0 9px;
+    border:var(--border);background:var(--paper);
+    box-shadow:3px 3px 0 0 var(--ink);
+  }
+  .nav-toggle span{display:block;width:100%;height:3px;background:var(--ink);}
+  .nav-toggle:active{transform:translate(2px,2px);box-shadow:1px 1px 0 0 var(--ink);}
+  .nav-mobile{
+    display:flex;flex-direction:column;gap:6px;
+    position:absolute;top:100%;left:0;right:0;z-index:49;
+    background:var(--paper);border-bottom:var(--border-thick);
+    padding:14px 18px;
+  }
+  .nav-mobile a{
+    padding:13px 12px;border:2px solid transparent;
+    font-family:var(--font-mono);font-size:14px;font-weight:700;
+    text-transform:uppercase;
+  }
+  .nav-mobile a.btn{border:var(--border-thick);justify-content:center;margin-top:4px;}
+}
+
+@media (max-width: 768px){
+  .container{padding:0 18px;}
+  nav.top{padding:12px 18px;}
+
+  #hero{padding:48px 0 28px !important;}
+  #product,#who,#partners,#faq,#founders,#buildlog{padding:60px 0 !important;}
+  .sz-section{padding:60px 0 !important;}
+
+  h1{font-size:clamp(38px,9vw,68px);}
+  h2{font-size:clamp(31px,7.4vw,52px);}
+  h3{font-size:clamp(22px,4.2vw,30px);}
+  p{font-size:16px;}
+
+  .marquee .track{gap:22px;padding:11px 0;}
+  .marquee span{font-size:15px;gap:22px;}
+  .marquee .dot{width:9px;height:9px;}
+
+  .card{padding:20px;box-shadow:6px 6px 0 0 var(--ink);}
+
+  .founders-grid{grid-template-columns:1fr !important;gap:22px !important;}
+  .product-grid{grid-template-columns:1fr !important;gap:16px !important;}
+  .product-cell-4{grid-column:span 12 !important;}
+  .product-transcript{grid-template-columns:1fr !important;padding:20px !important;gap:16px !important;}
+  .footer-grid{grid-template-columns:1fr 1fr !important;gap:26px !important;}
+  .buildlog-row{grid-template-columns:1fr !important;gap:6px !important;}
+
+  .who-head{padding:14px !important;}
+  .who-head > div{font-size:19px !important;}
+  .who-cell{padding:16px 13px !important;font-size:13.5px !important;}
+
+  .sticker{display:none !important;}
+
+  .faq-q{padding:16px !important;}
+  .faq-q-text{font-size:16px !important;}
+  .faq-a{padding:0 16px 18px !important;font-size:15px !important;}
+
+  .apply-form{padding:22px !important;}
+
+  .section-label{flex-wrap:wrap;font-size:11px;}
+}
+
+@media (max-width: 600px){
+  .highlight-block{
+    display:inline;
+    -webkit-box-decoration-break:clone;box-decoration-break:clone;
+    transform:none;
+    border-width:3px;
+    box-shadow:3px 3px 0 0 var(--ink);
+    padding:0 6px;
+  }
+  h1,h2{line-height:1.08;}
+}
+
+@media (max-width: 480px){
+  .container{padding:0 14px;}
+  h1{font-size:clamp(32px,8.6vw,52px);}
+  h2{font-size:clamp(26px,7vw,40px);}
+  .card{padding:16px;}
+  .apply-form{padding:18px !important;}
+  .partners-items{grid-template-columns:1fr !important;}
+  .footer-grid{grid-template-columns:1fr !important;gap:24px !important;}
+  .who-cell{padding:13px 11px !important;font-size:12.5px !important;}
+  .who-head > div{font-size:17px !important;}
+  .btn{width:100%;justify-content:center;}
+  .nav-mobile a.btn{width:100%;}
+}
+
+@media (max-width: 360px){
+  .container{padding:0 12px;}
+  h1{font-size:clamp(28px,8.4vw,48px);}
+}

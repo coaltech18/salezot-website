@@ -3,10 +3,10 @@ import Layout from "@/components/Layout";
 export default function Terms() {
   return (
     <Layout screenLabel="Terms">
-      <section style={{ padding: "120px 0", minHeight: "60vh" }}>
+      <section className="sz-section" style={{ padding: "120px 0", minHeight: "60vh" }}>
         <div className="container" style={{ maxWidth: 720 }}>
           <span className="section-label" style={{ marginBottom: 20, display: "inline-block" }}>/ legal</span>
-          <h1 style={{ fontSize: "clamp(48px,6vw,88px)", marginBottom: 32 }}>Terms of Service</h1>
+          <h1 style={{ fontSize: "clamp(32px,7vw,88px)", marginBottom: 32 }}>Terms of Service</h1>
           <div className="card" style={{ padding: 40, fontSize: 18, lineHeight: 1.6 }}>
             <p>
               Terms of service coming soon. For questions, email{" "}

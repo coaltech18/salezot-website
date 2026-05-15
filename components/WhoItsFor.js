@@ -18,19 +18,19 @@ export default function WhoItsFor() {
           <br />
           <span style={{ color: "var(--chart)" }}>is this you?</span>
         </h2>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 0, border: "4px solid var(--paper)" }}>
-          <div style={{ padding: 20, background: "var(--chart)", color: "var(--ink)", borderRight: "4px solid var(--paper)", borderBottom: "4px solid var(--paper)" }}>
+        <div className="who-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 0, border: "4px solid var(--paper)" }}>
+          <div className="who-head" style={{ padding: 20, background: "var(--chart)", color: "var(--ink)", borderRight: "4px solid var(--paper)", borderBottom: "4px solid var(--paper)" }}>
             <div style={{ fontFamily: "var(--font-display)", fontSize: 28, textTransform: "uppercase" }}>✓ YOU</div>
           </div>
-          <div style={{ padding: 20, background: "var(--pink)", color: "var(--paper)", borderBottom: "4px solid var(--paper)" }}>
+          <div className="who-head" style={{ padding: 20, background: "var(--pink)", color: "var(--paper)", borderBottom: "4px solid var(--paper)" }}>
             <div style={{ fontFamily: "var(--font-display)", fontSize: 28, textTransform: "uppercase" }}>✗ NOT YOU</div>
           </div>
           {rows.map((r, i) => (
             <React.Fragment key={i}>
-              <div className="reveal" style={{ padding: "26px 24px", borderRight: "4px solid var(--paper)", borderBottom: i < rows.length - 1 ? "4px solid var(--paper)" : "none", fontSize: 18 }}>
+              <div className="reveal who-cell" style={{ padding: "26px 24px", borderRight: "4px solid var(--paper)", borderBottom: i < rows.length - 1 ? "4px solid var(--paper)" : "none", fontSize: 18 }}>
                 {r.you}
               </div>
-              <div className="reveal" style={{ padding: "26px 24px", borderBottom: i < rows.length - 1 ? "4px solid var(--paper)" : "none", fontSize: 18, opacity: 0.7, textDecoration: "line-through", textDecorationColor: "var(--pink)" }}>
+              <div className="reveal who-cell" style={{ padding: "26px 24px", borderBottom: i < rows.length - 1 ? "4px solid var(--paper)" : "none", fontSize: 18, opacity: 0.7, textDecoration: "line-through", textDecorationColor: "var(--pink)" }}>
                 {r.not}
               </div>
             </React.Fragment>
